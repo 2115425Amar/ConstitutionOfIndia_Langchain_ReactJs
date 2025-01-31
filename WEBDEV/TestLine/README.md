@@ -2,34 +2,37 @@
 
 An interactive quiz application built with React and Chakra UI, featuring gamification elements and a clean user interface.
 
-## Features
+## Environment Setup
 
-- Dynamic quiz questions loaded from an API
-- Progress tracking
-- Score calculation
-- Clean and intuitive UI
-- Responsive design
-- Gamification elements (progress bar, completion celebration)
+1. Copy `.env.example` to `.env`:
+```bash
+cp .env.example .env
+```
 
-## Setup Instructions
+2. Update the `.env` file with your API URL:
+```env
+REACT_APP_API_URL=your_api_url_here
+```
 
-1. Clone the repository:
-   ```bash
-   git clone [your-repo-url]
-   cd quiz-game
-   ```
+## Available Scripts
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+- Clone the repository:
+  ```bash
+  git clone [your-repo-url]
+  cd quiz-game
+  ```
 
-3. Run the development server:
-   ```bash
-   npm start
-   ```
+- Install dependencies:
+  ```bash
+  npm install
+  ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Run the development server:
+  ```bash
+  npm start
+  ```
+
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Technologies Used
 

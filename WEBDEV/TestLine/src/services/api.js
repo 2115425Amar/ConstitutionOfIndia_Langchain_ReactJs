@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const API_URL = 'https://api.jsonserve.com/Uw5CrX';
+const API_URL = process.env.REACT_APP_API_URL;
+
+if (!API_URL) {
+  console.error('API URL not found in environment variables');
+}
+
 const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
 
 export const fetchQuizData = async () => {
