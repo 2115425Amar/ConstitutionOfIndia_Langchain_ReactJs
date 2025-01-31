@@ -3,6 +3,9 @@ import axios from 'axios'
 
 const TutorContext = createContext()
 
+// Consider using environment variables for API endpoints
+const API_URL = import.meta.env.VITE_GEMINI_API_URL || 'https://generativelanguage.googleapis.com/v1beta';
+
 export function TutorProvider({ children }) {
   const [apiKey, setApiKey] = useState('')
   const [selectedCharacter, setSelectedCharacter] = useState('friendly-python')
@@ -42,7 +45,7 @@ export function TutorProvider({ children }) {
 
     try {
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
+        `${API_URL}/models/gemini-pro:generateContent?key=${apiKey}`,
         {
           contents: [{
             parts: [{
