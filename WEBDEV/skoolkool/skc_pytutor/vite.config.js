@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/skc_pytutor/',
+  // Remove the base URL for direct deployment
+  // base: '/skc_pytutor/',  // Comment out or remove this line
 })
