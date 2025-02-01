@@ -11,6 +11,7 @@ import Preamble from './components/Preamble/Preamble'; // Import the Preamble co
 import { LanguageProvider } from './context/LanguageContext';
 import { ThemeProvider } from './context/ThemeContext';
 import './styles/global.css';
+import Footer from './components/Footer/Footer'; 
 
 const Layout = ({ children }) => (
   <div className="app">
@@ -18,6 +19,7 @@ const Layout = ({ children }) => (
     <main className="main-content">
       {children}
     </main>
+    <Footer /> 
   </div>
 );
 
