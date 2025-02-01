@@ -26,10 +26,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Layout><Home /></Layout>,
   },
-  {
-    path: '/spin-wheel',
-    element: <Layout><SpinWheel /></Layout>,
-  },
+  // {
+  //   path: '/spin-wheel',
+  //   element: <Layout><SpinWheel /></Layout>,
+  // },
   {
     path: '/card-game2',
     element: <Layout><CardGame2 /></Layout>,

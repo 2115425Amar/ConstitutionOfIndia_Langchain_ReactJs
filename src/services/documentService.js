@@ -5,7 +5,7 @@ class DocumentService {
   constructor() {
     this.documents = null;
     // For development only - remove in production
-    this.apiKey = process.env.REACT_APP_GEMINI_API_KEY || 'AIzaSyCly1xXZsvk3fvkyfq3PG7hkaXNNbKfcSw';
+    this.apiKey = process.env.REACT_APP_GEMINI_API_KEY ;
     this.apiEndpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
     // Debug log (remove in production)

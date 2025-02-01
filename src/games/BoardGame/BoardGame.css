@@ -1,3 +1,5 @@
+/* Existing styles */
+
 .board-game {
   padding: 2rem;
   max-width: 1200px;
@@ -51,7 +53,7 @@
 .game-board {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  /* gap: 1rem; */
   margin: 2rem 0;
   padding: 2rem;
   background: white;
@@ -236,7 +238,7 @@
 }
 
 .board-game-container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -244,7 +246,7 @@
 .board-game-container h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .game-board {
@@ -257,13 +259,14 @@
 
 .board-row {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
+  flex-wrap: nowrap;
 }
 
 .board-cell {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   border: 1px solid #ddd;
   display: flex;
   align-items: center;
@@ -394,4 +397,50 @@
   .ladder-marker, .snake-marker {
     font-size: 1rem;
   }
-} 
+}
+
+/* Additional media queries for better mobile responsiveness */
+
+@media (max-width: 480px) {
+  .board-game {
+    padding: 1rem;
+  }
+
+  .game-intro, .game-over, .question-content {
+    padding: 1rem;
+  }
+
+  .start-button, .play-again-button, .roll-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    padding: 1rem;
+  }
+
+  .board-square {
+    padding: 0.5rem;
+  }
+
+  .dice {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .option-button {
+    padding: 0.5rem;
+  }
+
+  .question-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

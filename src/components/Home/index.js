@@ -8,17 +8,17 @@ const Home = () => {
   const navigate = useNavigate();
 
   const games = [
-    {
-      path: '/spin-wheel',
-      title: { en: 'Spin Wheel', hi: 'चक्र खेल' },
-      description: {
-        en: 'Learn about different aspects of the constitution through a fun spinning wheel game',
-        hi: 'एक मजेदार स्पिनिंग व्हील गेम के माध्यम से संविधान के विभिन्न पहलुओं के बारे में जानें'
-      }
-    },
+    // {
+    //   path: '/spin-wheel',
+    //   title: { en: 'Spin Wheel', hi: 'चक्र खेल' },
+    //   description: {
+    //     en: 'Learn about different aspects of the constitution through a fun spinning wheel game',
+    //     hi: 'एक मजेदार स्पिनिंग व्हील गेम के माध्यम से संविधान के विभिन्न पहलुओं के बारे में जानें'
+    //   }
+    // },
     // ... existing code ...
     {
-        path: '/card-game',
+        path: '/card-game2',
         title: { en: 'Memory Card Game', hi: 'मेमोरी कार्ड खेल' },
         description: {
           en: 'Match constitutional concepts and learn through memory card games',

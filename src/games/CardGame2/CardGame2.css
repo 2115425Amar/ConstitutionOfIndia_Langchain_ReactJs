@@ -103,7 +103,7 @@
 }
 
 .card-front {
-  background: #ff9933;
+  background: linear-gradient(to bottom, #ff9933 33.33%, white 33.33%, white 66.66%, #138808 66.66%);
   color: white;
   font-size: 2rem;
 }
